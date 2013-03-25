@@ -1,0 +1,22 @@
+{
+	"news/special/2013/newsspec_/Gruntfile.js": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/Gruntfile.js",
+	"news/special/2013/newsspec_/README.md": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/README.md",
+	"news/special/2013/newsspec_/pk.json": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/package.json",
+	"news/special/2013/newsspec_/inc/main.inc": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/inc/main.inc",
+	"news/special/2013/newsspec_/img/README.md": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/img/README.md",
+	"news/special/2013/newsspec_/css/main.css": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/css/main.css",
+	"news/special/2013/newsspec_/js/.jshintrc": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/js/.jshintrc",
+	"news/special/2013/newsspec_/js/bootstrap-desktop.js": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/js/bootstrap-desktop.js",
+	"news/special/2013/newsspec_/js/bootstrap.js": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/js/bootstrap.js",
+	"news/special/2013/newsspec_/js/main.js": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/js/main.js",
+	"news/special/2013/newsspec_/js/module/example.js": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/js/module/example.js",
+	"news/special/2013/newsspec_/js/lib/README.md": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/js/lib/README.md",
+	"news/special/2013/newsspec_/sass/animate.scss": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/sass/animate.scss",
+	"news/special/2013/newsspec_/sass/base.scss": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/sass/base.scss",
+	"news/special/2013/newsspec_/sass/desktop.scss": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/sass/desktop.scss",
+	"news/special/2013/newsspec_/sass/ie-fixes.scss": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/sass/ie-fixes.scss",
+	"news/special/2013/newsspec_/sass/main.scss": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/sass/main.scss",
+	"news/special/2013/newsspec_/sass/mobile.scss": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/sass/mobile.scss",
+	"news/special/2013/newsspec_/test/main_test.js": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/test/main_test.js",
+	"**/.DS_Store": false
+}
