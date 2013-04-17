@@ -1,4 +1,4 @@
-# grunt-init-newsspec
+# grunt-specials-project-scaffold
 
 > Create a BBC News Specials project with [grunt-init][], including Nodeunit unit tests.
 
@@ -9,10 +9,10 @@ If you haven't already done so, install [grunt-init][].
 
 ## Usage
 
-At the command-line, cd into an empty directory, run this command and follow the prompts.
+At the command-line, cd into an you sandbox workspace
 
 ```
-grunt-init commonjs
+grunt-init [path to location]create
 ```
 
-_Note that this template will generate files in the current directory, so be sure to change to a new directory first if you don't want to overwrite existing files._
+_Note that this template will generate files under your current directory, so be sure to change to your workspace directory first. It will overwrite any existing files of the same name in the same project path_

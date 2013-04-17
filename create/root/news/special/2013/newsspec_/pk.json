@@ -2,33 +2,14 @@
   "name": "newsspec_{%= newsspec_number %}",
   "description": "{%= description %}",
   "version": "0.1.0",
-  "homepage": "https:www.bbc.co.uk/news",
-  "author": {
-    "name": "{%= author_name %}",
-    "email": "{%= author_email %}"
-  },
-  "repository": {
-    "type": "svn",
-    "url": "{%= repository %}"
-  },
-  "bugs": {
-    "url": "https://jira.dev.bbc.co.uk/browse/NEWSSPEC-{%= newsspec_number %}"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/mit-license.php"
-    }
-  ],
-  "main": "js/newsspec_{%= newsspec_number %}",
-  "engines": {
-    "node": ">= 0.6.0"
-  },
-  "scripts": {
-    "test": "grunt nodeunit"
-  },
   "devDependencies": {
-   
-  },
-  "keywords": []
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-concat": "~0.2.0",
+    "grunt-contrib-requirejs": "~0.4.0",
+    "grunt-contrib-sass": "~0.3.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-qunit": "~0.2.1"
+  }
 }

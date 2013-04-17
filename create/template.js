@@ -23,7 +23,7 @@ exports.after = 'You should now install project dependencies with _npm ' +
   'http://gruntjs.com/getting-started';
 
 // Any existing file or directory matching this wildcard will cause a warning.
-exports.warnOn = ['*.png', '*.gif', '*.jpg'];
+//exports.warnOn = ['*.png', '*.gif', '*.jpg'];
 
 // The actual init template.
 exports.template = function(grunt, init, done) {

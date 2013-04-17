@@ -4,5 +4,8 @@
 
 /* Define global variables here  for colour, font sizes etc...*/
 $font-color: #fff;
+$path: 'news/special/2013/newsspec_{%= newsspec_number %}/img';
 
-/* Global styles here that apply to both Desktop and Mobile
+#newsspec_9999{
+	color:#ff0000;
+}

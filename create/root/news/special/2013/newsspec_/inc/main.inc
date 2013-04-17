@@ -3,7 +3,7 @@
 <!-- Local Host -->
 <!--set var="NSCENV" value="" -->
 <!-- NOLDEV -->
-<!--#set var="NSENV" value="http://noldev25new.newsonline.tc.nca.bbc.co.uk:11138/"-->
+<!--#set var="NSENV" value="http://localhost:8888/"-->
 <!-- Live -->
 <!--set var="NSCENV" value="http://news.bbcimg.co.uk" -->
 <!--#echo var="NSENV" -->

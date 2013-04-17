@@ -1,8 +1,11 @@
-define(['jquery-1', 'istats-1'], function($,istats) {
+define(['bootstrap'], function(news) {
 
-	var awesome = function(){
-    	return 'awesome';
-	}
-
+	return {
+        publicMethod: function() {
+			console.log('This is fired from our example module');
+			console.log(news);
+			console.log('**********');
+        }
+    };
 		
 });
