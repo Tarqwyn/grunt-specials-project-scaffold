@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>QUnit newsspec_{%= newsspec_number %} - {%= description %}</title>
+  <link rel="stylesheet" href="/news/special/{%= year %}/newsspec_{%= newsspec_number %}/test/resource/qunit.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+   <script src=" /news/vendor/libs/require.js"></script>
+  <script src="/news/special/{%= year %}/newsspec_{%= newsspec_number %}/test/resource/qunit.js"></script>
+    <script>
+        require({ 
+            paths: {
+            "bootstrap":'/news/special//{%= year %}/newsspec_{%= newsspec_number %}/js/bootstrap-desktop',
+            "jquery-1":"/news/vendor/libs/jquery-1.7.2",
+            "istats-1":"/news/vendor/libs/istats-1",
+            "lib":'/news/special//{%= year %}/newsspec_{%= newsspec_number %}/js/lib/',
+            "js":'/news/special//{%= year %}/newsspec_{%= newsspec_number %}/js/module',
+            }
+        });
+  </script>
+  <script src="/news/special//{%= year %}/newsspec_{%= newsspec_number %}/test/example_test.js"></script>
+
+</body>
+</html>

@@ -21,13 +21,7 @@
     }else{
         //can be changed to any development environment you like...
         baseUrl = 'http://localhost:8888';
-    }
-    // so we can use an observer pattern..we map eventEmitter
-    require({ 
-        paths: {
-            "event_emitter": baseUrl+'/news/special/shared/js/event_emitter/event_emitter'
-        }
-    });
+    } 
     //default configuration 
     config = {
         paths: {

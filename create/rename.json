@@ -19,6 +19,9 @@
 	"news/special/2013/newsspec_/sass/_ie-fixes.scss": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/sass/_ie-fixes.scss",
 	"news/special/2013/newsspec_/sass/main.scss": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/sass/main.scss",
 	"news/special/2013/newsspec_/sass/_mobile.scss": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/sass/_mobile.scss",
-	"news/special/2013/newsspec_/test/main_test.js": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/test/main_test.js",
+	"news/special/2013/newsspec_/test/example_test.js": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/test/example_test.js",
+	"news/special/2013/newsspec_/test/test.html": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/test/test.html",
+	"news/special/2013/newsspec_/test/resource/qunit.js": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/test/resource/qunit.js",
+	"news/special/2013/newsspec_/test/resource/qunit.css": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/test/resource/qunit.css",		
 	"**/.DS_Store": false
 }

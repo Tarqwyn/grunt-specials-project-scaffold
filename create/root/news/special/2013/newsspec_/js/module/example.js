@@ -5,6 +5,7 @@ define(['bootstrap'], function(news) {
 			console.log('This is fired from our example module');
 			console.log(news);
 			console.log('**********');
+			return true;
         }
     };
 		

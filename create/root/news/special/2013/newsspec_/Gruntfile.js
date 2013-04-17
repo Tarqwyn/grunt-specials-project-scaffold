@@ -24,7 +24,7 @@ module.exports = function(grunt) {
         boss: true,
         eqnull: true
       },
-      all: ['Gruntfile.js','js/*.js','js/module/*.js', 'test/**/*.js']
+      all: ['Gruntfile.js','js/*.js','js/module/*.js', 'test/*.js']
     },
         requirejs: {
         desktop:{
@@ -70,9 +70,15 @@ module.exports = function(grunt) {
       }
     }
   },
-  qunit: {
-    files: ['test/**/*.html']
-  },
+ qunit: {
+        all: {
+          options: {
+            urls: [
+              'http://localhost:8888/news/special/{%= year %}/newsspec_{%= newsspec_number %}/test/test.html'
+            ]
+          }
+        }
+    },
    watch:{
     scripts:{
       files: 'js/**/*.js',
@@ -94,10 +100,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify','jshint','requirejs','sass','qunit']);
+  grunt.registerTask('default', ['uglify','jshint','qunit','requirejs','sass']);
 
 };

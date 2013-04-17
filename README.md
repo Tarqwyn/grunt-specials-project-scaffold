@@ -7,7 +7,8 @@ Including the following tasks:
 * Code checking - using jsHint
 * Minification of Main - using uglify
 * Compiling of Modules into Desktop and Responsive code - using requirejs
-* Compiling and compression of CSS - using sass 
+* Compiling and compression of CSS - using sass
+* Basic QUnit framework 
 * Watch changes to scss and js files to run jshint and sass
 
 [grunt-init]: http://gruntjs.com/project-scaffolding
@@ -27,7 +28,6 @@ _Note that this template will generate files under your current directory, so be
 
 ### Outstanding
 
-* Set up basic Unit testing harness
 * Task to deploy to Stage
 * Task to deploy to Live
 * Task to compile a syndicated delivery
