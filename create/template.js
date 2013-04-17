@@ -47,6 +47,12 @@ exports.template = function(grunt, init, done) {
           done();
         }
     },
+    {
+      name: 'sandbox',
+      message: 'Preferred Sandbox',
+      default: 'http://localhost:8888',
+      warning: 'May consist of any characters.'
+    },
     init.prompt('description','News Specials task'),
     {
       name: 'author_name',
@@ -68,11 +74,13 @@ exports.template = function(grunt, init, done) {
   ], function(err, props) {
     props.keywords = [];
     props.devDependencies = {
-      'grunt-contrib-concat': '~0.1.2',
-      'grunt-contrib-uglify': '~0.1.1',
-      'grunt-contrib-jshint': '~0.1.1',
-      'grunt-contrib-nodeunit': '~0.1.2',
-      'grunt-contrib-watch': '~0.2.0',
+      "grunt": "~0.4.1",
+      "grunt-contrib-jshint": "~0.1.1",
+      "grunt-contrib-uglify": "~0.2.0",
+      "grunt-contrib-requirejs": "~0.4.0",
+      "grunt-contrib-sass": "~0.3.0",
+      "grunt-contrib-watch": "~0.3.1",
+      "grunt-contrib-qunit": "~0.2.1"
     };
 
     // Files to copy (and process).

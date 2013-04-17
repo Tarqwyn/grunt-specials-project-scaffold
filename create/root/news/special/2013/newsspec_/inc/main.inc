@@ -3,24 +3,14 @@
 <!-- Local Host -->
 <!--set var="NSCENV" value="" -->
 <!-- NOLDEV -->
-<!--#set var="NSENV" value="http://localhost:8888/"-->
+<!--#set var="NSENV" value="{%= sandbox %}/"-->
 <!-- Live -->
 <!--set var="NSCENV" value="http://news.bbcimg.co.uk" -->
 <!--#echo var="NSENV" -->
 
-<!-- load CSS -->
-<link rel="stylesheet" type="text/css" href="<!--#echo var="NSENV" -->/news/special/{%= year %}/newsspec_{%= newsspec_number %}/css/main.css" />
-
-<!-- HTML -->
-
-<div id="newsspec_{%= newsspec_number %}">
-
-<p>Its here</p>
-
-</div>
+<!--#include virtual="/news/special/{%= year %}/newsspec_{%= newsspec_number %}/inc/main_html.inc" -->
 
 <!-- Load JS here Main JS will take care of loading all the dependencies -->
-
-<script type="text/javascript" src="<!--#echo var="NSENV" -->/news/special/{%= year %}/newsspec_{%= newsspec_number %}/js/main.js"></script>
+<script><!--#include virtual="/news/special/{%= year %}/newsspec_{%= newsspec_number %}/inc/compiled/main_js.inc" --> </script>
 
 <!-- /newsspec_{%= newsspec_number %} -->

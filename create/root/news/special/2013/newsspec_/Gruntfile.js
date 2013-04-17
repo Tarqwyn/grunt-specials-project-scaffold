@@ -8,7 +8,7 @@ module.exports = function(grunt) {
       },
       build: {
         src: 'js/main.js',
-        dest: 'js/compiled/main.min.js'
+        dest: 'inc/compiled/main_js.inc'
       }
     },
     jshint: {
@@ -32,7 +32,6 @@ module.exports = function(grunt) {
           baseUrl: '.',
           paths: {
               'js': 'js/module',
-              // Exclude the bootstrap as it's a parallel depedency of app
               'bootstrap': "js/bootstrap-desktop",
               'jquery-1':"empty:",
               'istats-1':"empty:",
@@ -58,6 +57,21 @@ module.exports = function(grunt) {
           name: 'js/app',
           optimize: 'uglify'
         }
+      },
+        syndicate:{
+          options: {            
+          baseUrl: '.',
+          paths:{
+              'js': 'js/module',
+              'bootstrap': "js/bootstrap-desktop",
+              "jquery-1":"../../../vendor/libs/jquery-1.7.2",
+              "istats-1":"../../../vendor/libs/istats-1",
+              'lib':"js/lib"
+          },
+          out:'js/compiled/syndicate/app.js',
+          name: 'js/app',
+          optimize: 'uglify'
+        }
       }
     },
   sass: {
@@ -74,7 +88,7 @@ module.exports = function(grunt) {
         all: {
           options: {
             urls: [
-              'http://localhost:8888/news/special/{%= year %}/newsspec_{%= newsspec_number %}/test/test.html'
+              '{%= sandbox %}/news/special/{%= year %}/newsspec_{%= newsspec_number %}/test/test.html'
             ]
           }
         }
@@ -104,6 +118,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-qunit');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify','jshint','qunit','requirejs','sass']);
+  grunt.registerTask('default', ['jshint','uglify','qunit','requirejs:desktop','requirejs:mobile','sass']);
 
 };

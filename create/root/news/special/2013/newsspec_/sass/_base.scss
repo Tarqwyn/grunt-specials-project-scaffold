@@ -4,8 +4,15 @@
 
 /* Define global variables here  for colour, font sizes etc...*/
 $font-color: #fff;
-$path: 'news/special/2013/newsspec_{%= newsspec_number %}/img';
+$path: 'news/special/{%= year %}/newsspec_{%= newsspec_number %}/img';
 
-#newsspec_9999{
-	color:#ff0000;
+/* allows toggling of debug-grid on bbc desktop site*/
+html.debug{
+	#blq-container-outer {
+		background: transparent url(http://news.bbcimg.co.uk/view/1_4_37/cream/hi/news/img/red-masthead.png) repeat-x scroll center top;
+	}
+}
+/* class namespace that allows resetting of CSS properties internal to our module*/
+#newsspec_{%= newsspec_number %}.ns__clearfix{
+	color: #ff0;
 }

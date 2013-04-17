@@ -3,6 +3,7 @@
 	"news/special/2013/newsspec_/README.md": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/README.md",
 	"news/special/2013/newsspec_/pk.json": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/package.json",
 	"news/special/2013/newsspec_/inc/main.inc": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/inc/main.inc",
+	"news/special/2013/newsspec_/inc/main_html.inc": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/inc/main_html.inc",	
 	"news/special/2013/newsspec_/img/README.md": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/img/README.md",
 	"news/special/2013/newsspec_/css/main.css": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/css/main.css",
 	"news/special/2013/newsspec_/js/.jshintrc": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/js/.jshintrc",
@@ -23,5 +24,6 @@
 	"news/special/2013/newsspec_/test/test.html": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/test/test.html",
 	"news/special/2013/newsspec_/test/resource/qunit.js": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/test/resource/qunit.js",
 	"news/special/2013/newsspec_/test/resource/qunit.css": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/test/resource/qunit.css",		
+	"news/special/2013/newsspec_/inc/syndicate/syndicate.stm": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/inc/syndicate/syndicate.stm",
 	"**/.DS_Store": false
 }

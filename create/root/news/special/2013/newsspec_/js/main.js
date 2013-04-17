@@ -10,17 +10,18 @@
 
 (function () {
     var baseUrl,
+    debug = 'true',
     isDesktop = (window.bbc),
     el = document.getElementById('newsspec_{%= newsspec_number %}'),
     //environment variable switch based on current environment 'prod' for production
     env = 'dev';
-
+    el.className = 'ns__clearfix';
     if(env === 'prod'){
-        //baseUrl = 'http://news.bbcimg.co.uk';
-        baseUrl = 'http://localhost:8888';
+        baseUrl = 'http://news.bbcimg.co.uk';
+        //baseUrl = '{%= sandbox %}';
     }else{
         //can be changed to any development environment you like...
-        baseUrl = 'http://localhost:8888';
+        baseUrl = '{%= sandbox %}';
     } 
     //default configuration 
     config = {
@@ -33,15 +34,18 @@
 
     // If we are desktop
     if (isDesktop) {
+        if(debug){
+            document.getElementsByTagName('HTML')[0].className = 'debug';
+        }
         // collect the wrapper id for the include and give it a desktop hook
-        el.className = 'desktop';
+        el.className += ' ns__desktop';
         // Switch app to compiled file in production     
         if (env === 'prod') {
             config.paths['js'] = baseUrl + '/news/special/{%= year %}/newsspec_{%= newsspec_number %}/js/compiled/desktop';
         }
     }else{ 
     // give the responsive hook   
-        el.className = 'mobile';
+        el.className += ' ns__mobile';
         //switch the bootstrap in dev mode...
         config.paths['bootstrap'] = baseUrl + '/news/special/{%= year %}/newsspec_{%= newsspec_number %}/js/bootstrap';
         // Switch app to compiled file in production
