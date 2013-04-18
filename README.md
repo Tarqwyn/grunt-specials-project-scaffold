@@ -10,6 +10,7 @@ Including the following tasks:
 * Compiling and compression of CSS - using sass
 * Basic QUnit framework 
 * Watch changes to scss and js files to run jshint and sass
+* Produce syndicated product (jsrequire:syndicate) - Local copies of micro libraries required
 
 [grunt-init]: http://gruntjs.com/project-scaffolding
 
@@ -30,5 +31,5 @@ _Note that this template will generate files under your current directory, so be
 
 * Task to deploy to Stage
 * Task to deploy to Live
-* Task to compile a syndicated delivery
+* Task to compile a syndicated delivery - To be completed (proof of concept delivered)
 * Document

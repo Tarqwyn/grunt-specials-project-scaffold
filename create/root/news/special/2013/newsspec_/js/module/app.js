@@ -1,7 +1,7 @@
 // This is our application entry point ... If possible there should be only one entry point
 // However it may be nessecary to have a seperate mobile app entry point. If this is the case then 
 // paths inside main.js will need to be added to reflect this.
-define(['bootstrap','js/example'], function(news,example) {
+define(['bootstrap','js/example','js/istat-tracking'], function(news,example,track) {
 
     return {
         init: function() {

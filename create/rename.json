@@ -13,6 +13,7 @@
 	"news/special/2013/newsspec_/js/main.js": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/js/main.js",
 	"news/special/2013/newsspec_/js/module/app.js": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/js/module/app.js",
 	"news/special/2013/newsspec_/js/module/example.js": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/js/module/example.js",
+	"news/special/2013/newsspec_/js/module/istat-tracking.js": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/js/module/istat-tracking.js",	
 	"news/special/2013/newsspec_/js/lib/README.md": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/js/lib/README.md",
 	"news/special/2013/newsspec_/sass/_animate.scss": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/sass/_animate.scss",
 	"news/special/2013/newsspec_/sass/_base.scss": "news/special/{%= grunt.template.today('yyyy') %}/newsspec_{%= newsspec_number %}/sass/_base.scss",
